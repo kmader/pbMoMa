@@ -133,32 +133,4 @@ def phaseBasedMagnify(vidFname, vidFnameOut, maxFrames, windowSize, factor, fpsF
 
     # free the video reader/writer
     vidReader.release()
-    vidWriter.release()   
-
-
-################# main script
-
-#vidFname = 'media/baby.mp4';
-#vidFname = 'media/WIN_20151208_17_11_27_Pro.mp4.normalized.avi'
-#vidFname = 'media/embryos01_30s.mp4'
-vidFname = 'media/guitar.mp4'
-
-# maximum nr of frames to process
-maxFrames = 60000
-# the size of the sliding window
-windowSize = 30
-# the magnifaction factor
-factor = 20
-# the fps used for the bandpass
-fpsForBandPass = 600 # use -1 for input video fps
-# low ideal filter
-lowFreq = 72
-# high ideal filter
-highFreq = 92
-# output video filename
-vidFnameOut = vidFname + '-Mag%dIdeal-lo%d-hi%d.avi' % (factor, lowFreq, highFreq)
-
-phaseBasedMagnify(vidFname, vidFnameOut, maxFrames, windowSize, factor, fpsForBandPass, lowFreq, highFreq)
-
-
-
+    vidWriter.release()
