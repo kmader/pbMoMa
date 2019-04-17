@@ -1,0 +1,19 @@
+name: pbmoma
+channels:
+  - defaults
+  - conda-forge
+  - menpo
+dependencies:
+  - python=2.7
+  - matplotlib
+  - pandas
+  - notebook
+  - jupyter
+  - scipy
+  - ffmpeg
+  - opencv3
+  - scikit-image
+  - pip:
+    - perceptual
+    - pathlib
+    - six
